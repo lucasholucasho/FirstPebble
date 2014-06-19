@@ -5,7 +5,7 @@ var minutes = date.getMinutes();
 var hourBinary;
 var minutesBinary;
 
-if (minutes >= 10)
+if (parseInt(minutes) >= 10)
 {
 	simply.setText({
 		title: 'The time in binary',
