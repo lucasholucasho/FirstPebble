@@ -19,7 +19,7 @@ function startTime() {
 			body: hour+":0"+minutes,
 			}, true);	
 	}
-	var t = setTimeout(function(){startTimedsdssdds()},500);
+	var t = setTimeout(function(){startTime()},500);
 }
 
 startTime();
