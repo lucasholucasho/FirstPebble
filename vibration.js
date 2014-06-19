@@ -5,7 +5,7 @@ function startTime() {
 	var seconds = date.getSeconds();
 	simply.setText({
 		title: 'The time in binary',
-		body: hourBin+":"+minutesBin+":"+seconds,
+		subtitle: hourBin+":"+minutesBin+":"+seconds,
 		}, true);
 }
 
