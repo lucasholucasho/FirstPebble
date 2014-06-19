@@ -5,18 +5,19 @@ function startTime() {
 	var date = new Date();
 	var hour = date.getHours();
 	var minutes = date.getMinutes();
+	var seconds = date.getSeconds();
 	if (parseInt(minutes) >= 10)
 	{
 		simply.setText({
 			title: 'The time in binarydddd',
-			body: hour+":"+minutes,
+			body: hour+":"+minutes+":"+seconds,
 			}, true);
 	}
 	else
 	{
 		simply.setText({
 			title: 'The time in binarydddddd',
-			body: hour+":0"+minutes,
+			body: hour+":0"+minutes+":"+seconds,,
 			}, true);	
 	}
 }
