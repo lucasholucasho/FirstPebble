@@ -8,14 +8,14 @@ function startTime() {
 	if (parseInt(minutes) >= 10)
 	{
 		simply.setText({
-			title: 'The time in binary',
+			title: 'The time in binarydddd',
 			body: hour+":"+minutes,
 			}, true);
 	}
 	else
 	{
 		simply.setText({
-			title: 'The time in binary',
+			title: 'The time in binarydddddd',
 			body: hour+":0"+minutes,
 			}, true);	
 	}
