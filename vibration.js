@@ -23,4 +23,4 @@ function startTime() {
 }
 
 startTime();
-simply.on('singleClick', startTime());
+simply.on('singleClick', startTime;
