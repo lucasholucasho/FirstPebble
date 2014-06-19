@@ -17,7 +17,7 @@ function startTime() {
 	{
 		simply.setText({
 			title: 'The time in binarydddddd',
-			body: hour+":0"+minutes+":"+seconds,,
+			body: hour+":0"+minutes+":"+seconds,
 			}, true);	
 	}
 }
