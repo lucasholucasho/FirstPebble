@@ -3,9 +3,9 @@ function retrieve() {
   var headline = data.match(/origTimeMin=(.*?)origTimeDate/);
   var timeQuotes = headline[0].match(/"(.*?)"/)[0];
   var time = timeQuotes.substring(1, timeQuotes.length-1);
-  simply.title("Next BART arrival:");
+  simply.title(time);
   simply.subtitle("Dublin Pleasanton to Powell");
-  simply.body(time);
+  //simply.body(time);
 });
 }
 
