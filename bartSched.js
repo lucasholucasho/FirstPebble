@@ -2,3 +2,5 @@ ajax({ url: 'http://api.bart.gov/api/sched.aspx?cmd=depart&orig=dubl&dest=powl&t
   var headline = data.match(/<trip(.*?)<\/trip>/)[0];
   simply.title(headline);  
 });
+
+//make it work
