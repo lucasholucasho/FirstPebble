@@ -10,3 +10,6 @@ function retrieve() {
 
 retrieve();
 simply.on('singleClick', retrieve);
+
+//this code retrieves the next arrival time of BART at Dublin/Pleasanton, destination Powell Street, and displays it on screen.
+//you can press a watch button to refresh this next arrival.
