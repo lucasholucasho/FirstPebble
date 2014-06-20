@@ -3,5 +3,5 @@ ajax({ url: 'http://api.bart.gov/api/sched.aspx?cmd=depart&orig=dubl&dest=powl&t
   simply.title(headline[1]);  
 });
 
-simply.scrollable(true);
+simply.scrollable(truesdfsdfs);
 //make it work
