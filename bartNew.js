@@ -13,15 +13,13 @@ var main = new UI.Card({
   });
 main.show();
 Settings.config(
-  { url: 'http://meiguro.com/simplyjs/settings.html' },
+  { url: 'http://lucasholucasho.github.io/config.html' },
     function(e) {
     console.log('closed configurable');
-
-    var response = e.options["scriptUrl"];
-    var fromTo = response.split(",");
-    var from = fromTo[0];
-    var to = fromTo[1];
-      var url = 'http://api.bart.gov/api/sched.aspx?cmd=depart&orig='+from+'&dest='+to+'&time=12:00pm&key=ZULP-JR5M-IVKQ-DT35&b=0&a=1';
+      
+    var from = e.options["start"];
+    var to = e.options["end"];
+    var url = 'http://api.bart.gov/api/sched.aspx?cmd=depart&orig='+from+'&dest='+to+'&time=now&key=ZULP-JR5M-IVKQ-DT35&b=0&a=1';
     ajax(
     {
       url: url
