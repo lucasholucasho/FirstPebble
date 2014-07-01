@@ -13,12 +13,22 @@ var main = new UI.Card({
   });
 main.show();
 Settings.config(
-  { url: 'http://lucasholucasho.github.io/config.html' },
+{ url: 'http://lucasholucasho.github.io/config.html', autoSave: "true"},
+  function open () {
+      //added
+      var from = Settings.option("from");
+      var to = Settings.option ("to");
+      main.body(from+ " "+to);
+  },
     function(e) {
     console.log('closed configurable');
-      
     var from = e.options["start"];
     var to = e.options["end"];
+      
+    //added
+    Settings.option("from", from);
+    Settings.option("to", to);
+      
     var url = 'http://api.bart.gov/api/sched.aspx?cmd=depart&orig='+from+'&dest='+to+'&time=now&key=ZULP-JR5M-IVKQ-DT35&b=0&a=1';
     ajax(
     {
